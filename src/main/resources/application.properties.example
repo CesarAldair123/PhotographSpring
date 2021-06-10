@@ -1,0 +1,32 @@
+#Database Properties
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/photograph
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username= #Your Username
+spring.datasource.password= #Your Password
+spring.jpa.show-sql=true
+
+#Email Properties
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username= #Your Gmail Account
+spring.mail.password= #Your Gmail Application Password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+mail.smtp.debug=true
+
+#JWT Properties
+jwt.secret=82cnsmenycgapkjac82y32c7yy7cd7xyaxyau78i3jcjhggfusisggse7748282cn827cn4xn7a6nzmxn8nye77nx3
+jwt.expiration=900000
+
+#Not Found Handler Properties
+spring.mvc.throw-exception-if-no-handler-found=true
+spring.web.resources.add-mappings=false
+
+#Multipart Properties
+spring.servlet.multipart.enabled=true
+spring.servlet.multipart.file-size-threshold=2KB
+spring.servlet.multipart.max-file-size=100MB
+spring.servlet.multipart.max-request-size=115MB
+
+file-upload.dir=/Users/Cesar/Pictures/Photograph

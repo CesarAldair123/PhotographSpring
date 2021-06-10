@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .title{
+            background-color: #5463d6;
+            padding: 10px;
+            color: #FFFFFF;
+            border-radius: 5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="title">Thanks <span th:text="${username}"></span> for register in Photograph</h1>
+<p>
+    You can verify your email in the next link: <br>
+    <a th:href="${link}" th:text="${link}"></a>
+</p>
+</body>
+</html>
